@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+  
+  function passvalue()
+  {
+    var fname=document.getElementById('animal').value;
+    localStorage.setItem("textvalue",fname);
+              
+    var aanimal=document.getElementById('anotheranimal').value;
+    localStorage.setItem("textvalue1",aanimal);
+
+    var dogo=document.getElementById('onemoreanimal').value;
+    localStorage.setItem("textvalue2",dogo);
+
+var run=document.getElementById('verb').value;
+    localStorage.setItem("textvalue3",run);
+
+var ss=document.getElementById('selectone').value;
+    localStorage.setItem("textvalue4",ss);
+
+
+    var hrs=document.getElementById('number').value;
+    localStorage.setItem("textvalue5",hrs);
+
+
+
+    var adj=document.getElementById('adjective').value;
+    localStorage.setItem("textvalue6",adj);
+
+       var yn=document.getElementById('rado').value;
+    localStorage.setItem("textvalue7",yn);
+
+
+      var mo=document.getElementById('motivational').value;
+    localStorage.setItem("textvalue8",mo);
+
+   
+     var text=document.getElementById('textarea').value;
+    localStorage.setItem("textvalue9",text);
+
+    return false;
+
+
+  }
+
+</script>
+
+	<title>storyform</title>
+	<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+</head>
+<style >
+	body {
+    font-family: 'ABeeZee';font-size: 22px;
+}
+	.backgroundsec{
+     background-color: #ffb71E;
+     height: 1100px;
+     width: 100%;
+    
+	}
+	.upersec{
+		
+     text-align: center;
+     height: 170px;
+     background-color: #ffffff;
+     margin-left: 10%;
+     margin-right: 10%;
+     margin-top: 2%;
+     border-radius: 40px;
+	}
+	.gap{
+		height: 20px;
+	}
+	.lowersec{
+		
+		height: 700px;
+		background-color: #fff0D0;
+		 margin-left: 10%;
+     margin-right: 10%;
+     margin-top: 2%;
+     text-align: center;
+     border-radius: 40px;
+	}
+</style>
+<body>
+
+<div class="backgroundsec">
+	      <div class="gap">
+	      	
+	      </div>
+	      <div class="upersec">
+	              <img src="rainbow.png" alt="xyz" style="width:20%;padding-top: 1%;padding-bottom: 1%; ">
+	      	      
+	      </div>
+
+          <div class="gap">
+          	
+          </div>
+           <div class="lowersec">
+            <div class="text" style="padding-top: 6%;padding-bottom: 6%;">
+           	        <h1>Complete the Form-</h1>
+           	        <h1>Complete the story!</h1>
+           	        <hr>
+           	        <form  name="form1" action="story.html" method="get">
+           	        	 <label for="fname">Animal:</label>
+           	        	 <input type="text" id="animal"><br>
+
+           	        	  <label for="fnam">Another Animal:</label>
+           	        	 <input type="text" id="anotheranimal"><br>
+
+           	        	  <label for="fnae">One more Animal:</label>
+                        <input type="text" id="onemoreanimal"><br>
+
+           	        	   <label for="fnme">Adjective(past tense):</label>
+           	        	 <input type="text" id="adjective"><br>
+
+           	        	   <label for="fame">Verb(ends in -ing):</label>
+           	        	 <input type="text" id="verb"><br>
+
+           	        	   <label for="name">number:</label>
+           	        	 <input type="text" id="number"><br>
+
+                       <label for="y or n">Yes or no </label>
+                    
+                           
+
+
+           	        	<select id="rado">
+                          <option>yes</option>
+                          <option>no</option>
+
+                      </select>
+
+                         <br>
+                           
+                             <label for="text">Relative speed(ends in -er)</label>
+                             <select id="selectone">
+                               <option>
+                                 Quicker
+
+                               </option>
+                                  <option>
+                                    slower
+                                  </option>
+                             </select><br>
+
+                             <label>Motivational Quote:
+                             </label>
+                             <input type="text" id="motivational"><br>
+
+                             <label>Meaningful Message</label><br>
+
+                             <textarea id="textarea" style="width: 30%;
+                             height: 20%;border: 2px solid #6482Ba;"></textarea>
+                             <br>
+                             <button id="print" onclick="passvalue()">Form my story!</button>
+
+           	        </form>
+           </div>
+ 
+ </div>
+
+</div>
+
+</body>
+</html>
